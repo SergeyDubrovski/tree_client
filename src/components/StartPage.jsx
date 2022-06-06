@@ -10,7 +10,7 @@ export default function StartPage() {
     <div className={classes.startPages}>
       <img className={classes.startPic} src={Pic}/>
       <h1 className={classes.startP}>
-      Grow yur plant
+      Grow your plant
       </h1>
           
           <div className={classes.btnStart}>

@@ -3,24 +3,21 @@ import { loadPlayer } from "rtsp-relay/browser";
 
 const Camera1 = (props) => {
   const canvas = useRef(HTMLCanvasElement);
-  const [video, setVideo] = useState('none')
-
+  
   useEffect(() => {
     if (!canvas.current) throw new Error("Ref is null");
 
     loadPlayer({
-      url: "ws://localhost:5000/api/stream",
+      url: "ws://91.215.176.34:7003/api/stream",
       canvas: canvas.current,
     });
   }, []);
-  const onClick = () => {
-      setVideo('block')
-  }
+
 
   return (
     <div>
-      <canvas style={{ display: video }} ref={canvas} />
-    <button onClick = {onClick}>JJJJ</button>
+      <canvas style={{display:props.style}} ref={canvas} />
+    
     </div>
   );
 };
