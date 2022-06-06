@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import Camera1 from './techPage/Camera1'
 
 export default function ControlPage(props) {
-  const [monitor, setMonitor] = useState(false);
+  const [monitor, setMonitor] = useState(true);
   const [video, setVideo] = useState('none');
 
 
@@ -17,6 +17,7 @@ export default function ControlPage(props) {
     else setVideo('none')
 
 }
+
   return (
     
     <div  className={classes.controlPage}>

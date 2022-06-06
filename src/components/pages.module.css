@@ -12,7 +12,7 @@
     height: 70px;
     background: #D9F3DB;
     border-radius: 20px 20px 0px 0px;
-    margin-top: 17vh;
+
 
 }
 
@@ -28,13 +28,14 @@
     width: 285px;
     height: 285px;
     left: 44px;
-    top: 60px;
+    top: 50px;
 }   
 
 h1 {
     align-self: center;
-    width: 35%;
-    padding-top: 60vh;
+    width: 65%;
+    padding-top: 55vh;
+    font-size: 54px;
 }
 
 .btnStart {
@@ -66,12 +67,18 @@ margin-left: 15px;
     margin-left: 13px;
 }
 
+.menuPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
 .blocks {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10vh;
+  
 
 }
 
