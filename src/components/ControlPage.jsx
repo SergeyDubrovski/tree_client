@@ -9,7 +9,12 @@ export default function ControlPage(props) {
   const [monitor, setMonitor] = useState(true);
   const [video, setVideo] = useState("none");
   const [relay, setRelay] = useState({ r1: false, r2: false });
+  const [delay, setDelay] = useState(true);
 
+  setTimeout(() => {
+    setDelay(false)
+  }, 3000);
+ 
   const onClick = () => {
     setMonitor(!monitor);
     if (monitor) setVideo("block");
@@ -23,18 +28,21 @@ export default function ControlPage(props) {
     switchRelay({ r1: relay.r1, r2: relay.r2 });
   };
 
-  return (
+  return ( 
     <div className={classes.controlPage}>
+    
       <div className={classes.controlVideoBlock}>
         <div className={classes.controlVideo}>
           <Camera1 className={classes.controlCamera} style={video} />
         </div>
-
-        <div className={classes.btnVideo}>
+  {delay ? <h2>WAIT...</h2> :
+      <div className={classes.btnVideo}>
           <button className={classes.btnVideoMini} onClick={onClick}>
             <img className={classes.poligonVideo} src={Poligon} alt="" />
           </button>
         </div>
+      }
+        
       </div>
 
       <div className={classes.btnLightWater}>
