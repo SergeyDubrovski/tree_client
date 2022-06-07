@@ -1,9 +1,9 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import { loadPlayer } from "rtsp-relay/browser";
 
 const Camera1 = (props) => {
   const canvas = useRef(HTMLCanvasElement);
-  
+
   useEffect(() => {
     if (!canvas.current) throw new Error("Ref is null");
 
@@ -13,11 +13,13 @@ const Camera1 = (props) => {
     });
   }, []);
 
-
   return (
     <div>
-      <canvas  height={props.height} style={{display:props.style }} ref={canvas} />
-    
+      <canvas
+        height={props.height}
+        style={{ display: props.style }}
+        ref={canvas}
+      />
     </div>
   );
 };
