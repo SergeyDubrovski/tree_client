@@ -16,7 +16,7 @@ const Camera1 = (props) => {
 
   return (
     <div>
-      <canvas style={{display:props.style }} ref={canvas} />
+      <canvas  height={props.height} style={{display:props.style }} ref={canvas} />
     
     </div>
   );
