@@ -11,10 +11,14 @@ export default function PlantPage() {
   return (
     <div className={classes.plantPages}>
  <NavBar />
- <Link to='/control'>
+
+   <Link className={classes.plantVideoIndicators} to='/control'>
  <img className={classes.video} src={Video} alt="" />
  <img className={classes.indicators} src={Indicators} alt="" />
  </Link>
+
+
+
  
  <div className={classes.text}>
     <p>Air temperature</p>
