@@ -8,6 +8,7 @@ import { switchRelay } from "../API/arduinoService";
 export default function ControlPage(props) {
   const [monitor, setMonitor] = useState(true);
   const [video, setVideo] = useState("none");
+  const [numCam, setNum] = useState("1");
   const [relay, setRelay] = useState({ r1: false, r2: false });
   const [delay, setDelay] = useState(true);
 
@@ -15,16 +16,17 @@ export default function ControlPage(props) {
     setDelay(false);
   }, 3000);
 
-  const onClick = () => {
+  const onClick = (e) => {
+    setNum(e.target.id);
     setMonitor(!monitor);
     if (monitor) setVideo("block");
     else setVideo("none");
+    
   };
-
+console.log(numCam );
   const giveRelay = (e) => {
     relay[e.target.id] = !relay[e.target.id];
     setRelay({ ...relay });
-
     switchRelay({ r1: relay.r1, r2: relay.r2 });
   };
 
@@ -32,18 +34,42 @@ export default function ControlPage(props) {
     <div className={classes.controlPage}>
       <div className={classes.controlVideoBlock}>
         <div className={classes.controlVideo}>
-          <Camera1 className={classes.controlCamera} height={100} width={200} style={video}  />
+          <Camera1
+            className={classes.controlCamera}
+            cam={numCam}
+            style={video}
+          />
         </div>
-      {delay ? (
+        {delay ? (
           <h2>WAIT...</h2>
         ) : (
           <div className={classes.btnVideo}>
-            <button style={{marginLeft:'20px'}} className={classes.btnVideoMini} onClick={onClick}>
-              <img className={classes.poligonVideo} src={Poligon} alt="" />
+            <button
+              style={{ marginLeft: "20px" }}
+              className={classes.btnVideoMini}
+              
+              onClick={onClick}
+            >
+              <img className={classes.poligonVideo} id="1" src={Poligon} alt="" />
+            </button>
+            <button
+              style={{ marginLeft: "160px" }}
+              className={classes.btnVideoMini}
+              
+              onClick={onClick}
+            >
+              <img className={classes.poligonVideo} id="2" src={Poligon} alt="" />
+            </button>
+            <button
+              style={{ marginLeft: "300px" }}
+              className={classes.btnVideoMini}
+              
+              onClick={onClick}
+            >
+              <img className={classes.poligonVideo} id="3" src={Poligon} alt="" />
             </button>
           </div>
         )}
-     
       </div>
 
       <div className={classes.btnLightWater}>
