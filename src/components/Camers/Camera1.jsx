@@ -27,7 +27,7 @@ const Camera1 = (props) => {
       url: urlCam,
       canvas: canvas.current,
     });
-  }, [urlCam]);
+  }, []);
 
   console.log(urlCam);
   return (

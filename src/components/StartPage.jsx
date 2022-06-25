@@ -10,13 +10,16 @@ export default function StartPage() {
       <h1 >Grow your plant</h1>
 
       <div className>
-        <div></div>
-
-        <Link to="/menu">
+        <div>
+ <Link to="/monitor">
           <button >
-          
+          Go to monitor
           </button>
         </Link>
+
+        </div>
+
+       
       </div>
     </div>
   );

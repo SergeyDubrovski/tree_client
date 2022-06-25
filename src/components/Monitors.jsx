@@ -13,12 +13,15 @@ export default function Monitors() {
     <div className={classes.monitors}>
        <NavBar />
        <div className={classes.monitorList} >
+       <Link to='/monitor/sun'> 
         <img className={classes.monitor1} src={monitorone} alt="" />
+        </Link> 
         <Link to='/monitor/tree'>
          <img className={classes.monitor2} src={monitortwo} alt="" />
         </Link>
-      
+        <Link to='/monitor/rain'>  
        <img className={classes.monitor3} src={monitorthree} alt="" />
+       </Link> 
        </div>
        
     </div>
