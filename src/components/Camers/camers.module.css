@@ -1,12 +1,29 @@
 .treePage {
     width: 100%;
     height: 100vh;
-    background-color: #5FC1FF;
+    background-color: #C1D045;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.rainPage {
+    width: 100%;
+    height: 100vh;
+    background-color: #5D7EB7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sunPage {
+    width: 100%;
+    height: 100vh;
+    background-color: #FF9B19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 .treeTV {
     position: absolute;
@@ -14,7 +31,7 @@
     height: 480px;
     background-color: white;
     border: 3px solid;
-    margin-top: 12vh;
+    margin-top: 15vh;
  
 }
 

@@ -24,9 +24,10 @@ export default function RainM() {
     videoSet('block') 
   }, 5000)
   
+  
   return (
 
-    <div className={classes.treePage}>
+    <div className={classes.rainPage}>
       <NavBar /> 
       <div className={classes.treeTV}>
       <canvas  style={{ display: video  }} ref={canvas} /> 
@@ -46,7 +47,7 @@ export default function RainM() {
         </div>
       
       </div>
-      <button onClick={() => videoSet('block') }>{'>'}</button>
+    
     </div>
   )
 }

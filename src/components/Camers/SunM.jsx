@@ -26,7 +26,7 @@ export default function SunM() {
   
   return (
 
-    <div className={classes.treePage}>
+    <div className={classes.sunPage}>
       <NavBar /> 
       <div className={classes.treeTV}>
       <canvas  style={{ display: video  }} ref={canvas} /> 
@@ -46,7 +46,7 @@ export default function SunM() {
         </div>
       
       </div>
-      <button onClick={() => videoSet('block') }>{'>'}</button>
+  
     </div>
   )
 }

@@ -46,7 +46,7 @@ export default function TreeM() {
         </div>
       
       </div>
-      <button onClick={() => videoSet('block') }>{'>'}</button>
+     
     </div>
   )
 }

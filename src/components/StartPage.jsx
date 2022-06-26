@@ -17,8 +17,13 @@ export default function StartPage() {
 
       <div className={classes.lineTwo}></div>
     </div>
+<div className={classes.title}>
+<h1 className={classes.word1}>Grow </h1>
+      <h1 className={classes.word2}>your </h1>
+      <h1 className={classes.word3}>plant</h1>
 
-      <h1 >Grow your plant</h1>
+</div>
+      
 
       <div >
         <div>

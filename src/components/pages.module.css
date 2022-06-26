@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 .lineOne, .lineTwo {
 
@@ -21,16 +22,48 @@ background-color: #F96417;
 margin-top: 50px;
 
 }
-
-h1 {
-    font-size: 80px;
-    font-weight: bold;
+.title {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-evenly;
 
 }
+
+.word1 {
+    font-size: 80px;
+    font-weight: bold;
+    
+    background: linear-gradient(97.24deg, #105D8A 10.7%, #7CA2BB 50.51%, #9EBACD 79.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+ 
+}
+ .word2 {
+    font-size: 80px;
+    font-weight: bold;
+    background: linear-gradient(92.48deg, #FFEA38 13.35%, #FEF28B 46.93%, #FFF9C4 85.31%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+ } 
+ 
+ .word3 {
+    font-size: 80px;
+    font-weight: bold;
+    background: linear-gradient(268.51deg, #02565F 42.08%, #35B7B1 57.07%, #00F2DB 84.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
 .spruce {
     width: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .spruceLeft, .spruceRight {
    width: 50px;
@@ -69,6 +102,15 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
     position: absolute;
-    margin-top: 155vh;
+    margin-top: 140vh;
+}
+
+.robot1, .robot2 {
+    width: 451px;
+    height: 348px;
+
+}
+.roots   {
+   transition: all 2s;
 }
 
