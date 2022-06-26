@@ -15,9 +15,8 @@ function App() {
   return (
     
      
-      <div className="appPage">
-      <Routes>  
-      
+      <div >
+      <Routes>    
       <Route path="/" element={<StartPage />} />
       <Route path="/Start" element={<Roots />} />
        <Route path="/monitor" element={<Monitors />} />
