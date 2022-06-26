@@ -9,6 +9,7 @@ import Monitors from "./components/Monitors";
 import TreeM from "./components/Camers/TreeM";
 import SunM from "./components/Camers/SunM";
 import RainM from "./components/Camers/RainM";
+import Roots from "./components/Roots";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>  
       
       <Route path="/" element={<StartPage />} />
+      <Route path="/Start" element={<Roots />} />
        <Route path="/monitor" element={<Monitors />} />
        <Route path="/monitor/tree" element={<TreeM />} />
        <Route path="/monitor/sun" element={<SunM />} /> 
