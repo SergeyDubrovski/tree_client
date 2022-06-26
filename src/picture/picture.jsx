@@ -1,3 +1,5 @@
+import React from "react"; 
+import classes from "../components/pages.module.css"
 import pic1 from "../picture/root/kolbaroot1.png";
 import pic2 from "../picture/root/kolbaroot2.png";
 import pic3 from "../picture/root/kolbaroot3.png";
@@ -12,7 +14,7 @@ import pic11 from "../picture/root/kolbaroot11.png";
 import pic12 from "../picture/root/kolbaroot12.png";
 import pic13 from "../picture/root/kolbaroot13.png";
 
-export const picture = [
+const picture = [
   pic13,
   pic12,
   pic11,
@@ -27,3 +29,7 @@ export const picture = [
   pic2,
   pic1,
 ];
+
+export default picture.map((value, index) => {
+    return <img className={classes.roots} src={value} alt="" /> 
+})
