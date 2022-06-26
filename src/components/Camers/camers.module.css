@@ -22,12 +22,16 @@
     position: absolute;
     width: 20vh;
     height: 20vh;
-    margin-top: -72vh;
-    margin-left: 10vh;
+    margin-top: 10vh;
+    margin-left: 2vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     color: #FF9B19;
     font-weight: bold;
+}
+
+canvas {
+    position: absolute;
 }
  
