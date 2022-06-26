@@ -17,7 +17,7 @@
 
 width: 30%;
 height: 3px;
-background-color: #FB520E;
+background-color: #F96417;
 margin-top: 50px;
 
 }
@@ -43,6 +43,8 @@ h1 {
 }
 
 .spruceBottom {
+    width: 50px;
+    height: 100px;
     transform: rotate(180deg);
 }
 
@@ -70,6 +72,3 @@ h1 {
     margin-top: 155vh;
 }
 
-.spruceTop {
-   
-}
