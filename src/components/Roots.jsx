@@ -38,8 +38,10 @@ export default function Roots() {
         <Link to="/monitor">
           <img className={classes.robot1} src={robot1} alt="img" />
         </Link>
-
-        <img className={classes.robot2} src={robot2} alt="img" />
+        <Link to="/scene/scene1">
+          <img className={classes.robot2} src={robot2} alt="img" />
+        </Link>
+        
         <img className={classes.robot3} src={robot3} alt="img" />
       </div>
     </div>

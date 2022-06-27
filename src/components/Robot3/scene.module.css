@@ -1,0 +1,120 @@
+.scene1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: stretch;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF494;
+}
+
+.flower {
+   
+    height: 348px;
+}
+.speed {
+    height: 100%;
+    display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: space-around;
+justify-content: space-around;
+align-items: center;
+}
+
+.rectangle {
+        position: fixed;
+        display: flex;
+        width: 400px;
+        height: 100px;
+        left: 60%;
+        top: 5%;
+        background: #D2E23D;
+        border-radius: 20px;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+}
+
+.scene2 {
+    background-image: url(../../picture/desert.png);
+    width: 3000px;
+    height: 100vh;
+    display: flex;
+    background-repeat: no-repeat;
+   
+}
+
+.speed2 {
+    height: 100%;
+    display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: space-around;
+justify-content: space-around;
+align-items: center;
+}
+.flowerandrobot2 {
+  
+    position: absolute;
+margin-top: 31vh;
+}
+.bitcoin {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.bitcoinPic {
+    width: 50px;
+    height: 50px;
+}
+
+.switchpic {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    margin-left: 92%;
+    margin-top: -11%;
+} 
+
+.speed3 {
+    height: 100%;
+    display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: space-around;
+justify-content: space-around;
+align-items: center;
+}
+
+.scene3 {
+ 
+    width: 8960px;
+    height: 100vh;
+    display: flex;
+overflow: hidden;
+   
+}
+
+.pic {
+    width: 8960px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bath, .earth, .forest, .image, .piramid, .sky {
+    width: 1280px;
+    height: 650px;
+
+} 
+.flowerandrobot3 {
+  
+    position: absolute;
+margin-top: 31vh;
+}
