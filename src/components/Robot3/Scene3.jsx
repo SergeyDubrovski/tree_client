@@ -19,15 +19,6 @@ let i = 0;
 export default function Scene3() {
   const [speed, setSpeed] = useState(40);
 
-  {/*const img = [
-    <img className={classes.bath}  src={bath} alt="img" />,
-    <img className={classes.earth} src={earth} alt="img" />,
-    <img className={classes.forest} src={forest} alt="img" />,
-    <img className={classes.image} src={image} alt="img" />,
-    <img className={classes.piramid} src={piramid} alt="img" />,
-    <img className={classes.sky} src={sky} alt="img" />,
-  ];*/}
-
   setTimeout(() => {
     if (i <= speedArr.length - 1) {
       setSpeed(speedArr[i]);
@@ -47,10 +38,10 @@ export default function Scene3() {
             <h3>0,0000909</h3>
           </div>
         </div>
-        {/*<div className={classes.pic}  >{img}</div>*/}
+        
 
         <div className={classes.pic}  >
-<div className={classes.bath}></div>
+<div className={classes.bath} style={{marginLeft:'-3560px'}}></div>
 <div className={classes.earth}></div>
 <div className={classes.forest}></div>
 <div className={classes.image}></div>
