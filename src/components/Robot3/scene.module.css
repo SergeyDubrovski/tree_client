@@ -102,15 +102,16 @@ align-items: center;
 
 .scene3 {
  
-    width: 100%;
+    width: 1280px;
     height: 100vh;
     display: flex;
 overflow: hidden;
+margin:  auto;
    
 }
 
 .pic {
-    width: 100%;
+    width: 7680px;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -120,8 +121,32 @@ overflow: hidden;
 .bath, .earth, .forest, .image, .piramid, .sky {
     width: 1280px;
     height: 650px;
+    display: block;
+
 
 } 
+.bath {
+background-image: url(../../picture/scene3/bath.jpg);
+} 
+
+.earth {
+    background-image: url(../../picture/scene3/earth.jpg);
+} 
+
+.forest{
+    background-image: url(../../picture/scene3/forest.jpg);
+} 
+.image{
+    background-image: url(../../picture/scene3/image.jpg);
+} 
+.piramid{
+    background-image: url(../../picture/scene3/piramid.jpg);
+} 
+
+.sky {
+    background-image: url(../../picture/scene3/sky.jpg);
+}
+
 .flowerandrobot3 {
   
     position: absolute;
