@@ -47,7 +47,7 @@ export default function Scene3() {
             <h3>0,0000909</h3>
           </div>
         </div>
-        <div className={classes.pic}  >{img[0]}</div>
+        <div className={classes.pic}  >{img}</div>
       </div>
       <img
         className={classes.flowerandrobot3}
