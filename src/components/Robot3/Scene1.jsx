@@ -1,37 +1,34 @@
-import React from 'react';
-import classes from './scene.module.css';
-import NavBar from '../NavBar';
-import { loadPlayer } from "rtsp-relay/browser";
-import { Link } from 'react-router-dom'
-import { useEffect } from 'react';
-import { useRef } from 'react';
-import { useState } from 'react';
-import flower from '../../picture/flowerandrobot.png'
-import switchpic from '../../picture/switch.png'
+import React from "react";
+import classes from "./scene.module.css";
+import {  useNavigate } from "react-router-dom";
+import { useState } from "react";
+import flower from "../../picture/flowerandrobot.png";
+import switchpic from "../../picture/switch.png";
 
 export default function Scene1() {
-
+  const navigate = useNavigate();
+  const [switchOn, setSwitchOn] = useState({});
+ 
+  const onClick = () => {
+    setSwitchOn({ transform: "rotate(180deg)" });
+    setTimeout(() => {
+      navigate("/scene/scene2");
+    }, 500);
+  };
 
   return (
-
     <div className={classes.scene1}>
-
-      
-        <img className={classes.flower} src={flower} alt="img" />
-      
+      <img className={classes.flower} src={flower} alt="img" />
 
       <div className={classes.speed}>
-
-        <div className={classes.rectangle}>
-          <h2>0 km/h</h2>
-        </div>
-        <Link to="/scene/scene2">
-        <img className={classes.switch} src={switchpic} alt="img" />
-        </Link>
+        <img
+          className={classes.switch}
+          onClick={onClick}
+          style={switchOn}
+          src={switchpic}
+          alt="img"
+        />
       </div>
-
-
-
     </div>
-  )
+  );
 }
