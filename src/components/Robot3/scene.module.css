@@ -90,16 +90,6 @@ margin-top: -85vh;
     transform: rotate(180deg);
 }  
 
-.speed3 {
-    height: 100%;
-    display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-align-content: space-around;
-justify-content: space-around;
-align-items: center;
-}
-
 .scene3 {
  
     width: 1280px;
@@ -110,12 +100,24 @@ margin:  auto;
    
 }
 
+/*.speed3 {
+    height: 100%;
+    display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: space-around;
+justify-content: space-around;
+align-items: center;
+}
+*/
+
+
 .pic {
     width: 7680px;
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+  
 }
 
 .bath, .earth, .forest, .image, .piramid, .sky {

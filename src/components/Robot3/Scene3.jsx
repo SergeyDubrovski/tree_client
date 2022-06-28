@@ -41,12 +41,12 @@ export default function Scene3() {
         
 
         <div className={classes.pic}  >
-<div className={classes.bath} style={{marginLeft:'-3560px'}}></div>
-<div className={classes.earth}></div>
-<div className={classes.forest}></div>
-<div className={classes.image}></div>
-<div  className={classes.piramid}></div>
-<div className={classes.sky}></div>
+          <div className={classes.bath} style={{marginLeft:'0'}}></div>
+          <div className={classes.earth}></div>
+          <div className={classes.forest}></div>
+          <div className={classes.image}></div>
+          <div  className={classes.piramid}></div>
+          <div className={classes.sky}></div>
         </div>
 
       </div>
