@@ -1,34 +1,57 @@
 import React from "react";
 import classes from "./scene.module.css";
-import { loadPlayer } from "rtsp-relay/browser";
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useRef } from "react";
 import { useState } from "react";
 import flowerandrobot3 from "../../picture/flowerandrobot3.png";
 import bitcoin from "../../picture/bitcoin.png";
-import bath from "../../picture/scene3/bath.jpg";
-import earth from "../../picture/scene3/earth.jpg";
-import forest from "../../picture/scene3/forest.jpg";
-import image from "../../picture/scene3/image.jpg";
-import piramid from "../../picture/scene3/piramid.jpg";
-import sky from "../../picture/scene3/sky.jpg";
 
 const speedArr = [2000, 2000, 10000, 20000, 40000, "......", "^^^^^", "(((((("];
 let i = 0;
 export default function Scene3() {
   const [speed, setSpeed] = useState(40);
+  const [margin, setMargin] = useState(0);
+
+  let j = 0;
+  useEffect(() => {
+    getSky();
+  }, []);
+
+  let a = 0;
+  let b = 0;
+  function getSky() {
+    i = 0;
+    let timer = setInterval(function () {
+      setMargin(a);
+
+      if (a > -7680) a = a - 1280;
+      else a = 0;
+    });
+
+    setTimeout(() => {
+      if (b > -6400) b = b - 1280;
+      else b = 0;
+      clearInterval(timer);
+      setMargin(b);
+    }, 300);
+
+    j++;
+
+    if (j < 10) {
+      setTimeout(function () {
+        getSky();
+      }, 1000);
+    } else {console.log('ddd');}
+  }
 
   setTimeout(() => {
     if (i <= speedArr.length - 1) {
       setSpeed(speedArr[i]);
       i++;
     } else setSpeed("E=mc2");
-    return;
-  }, 1000);
-  
+  }, 500);
+
   return (
-    <div className={classes.scene3} >
+    <div className={classes.scene3}>
       <div className={classes.speed3}>
         <div className={classes.rectangle}>
           <h3>{speed} km/h</h3>
@@ -38,17 +61,15 @@ export default function Scene3() {
             <h3>0,0000909</h3>
           </div>
         </div>
-        
 
-        <div className={classes.pic}  >
-          <div className={classes.bath} style={{marginLeft:'0'}}></div>
+        <div className={classes.pic}>
+          <div className={classes.bath} style={{ marginLeft: margin }}></div>
           <div className={classes.earth}></div>
           <div className={classes.forest}></div>
           <div className={classes.image}></div>
-          <div  className={classes.piramid}></div>
+          <div className={classes.piramid}></div>
           <div className={classes.sky}></div>
         </div>
-
       </div>
       <img
         className={classes.flowerandrobot3}
