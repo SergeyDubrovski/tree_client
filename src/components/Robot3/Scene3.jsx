@@ -4,13 +4,14 @@ import { useEffect } from "react";
 import { useState } from "react";
 import flowerandrobot3 from "../../picture/flowerandrobot3.png";
 import bitcoin from "../../picture/bitcoin.png";
+import { useNavigate } from "react-router-dom";
 
 const speedArr = [2000, 2000, 10000, 20000, 40000, "......", "^^^^^", "(((((("];
 let i = 0;
 export default function Scene3() {
   const [speed, setSpeed] = useState(40);
   const [margin, setMargin] = useState(0);
-
+  const navigate = useNavigate() ; 
   let j = 0;
   useEffect(() => {
     getSky();
@@ -40,7 +41,7 @@ export default function Scene3() {
       setTimeout(function () {
         getSky();
       }, 1000);
-    } else {console.log('ddd');}
+    } else {navigate('/scene/scene4')  ;}
   }
 
   setTimeout(() => {

@@ -161,6 +161,7 @@ align-items: center;
 
     position: absolute;
     margin-top: 31vh;
+    transition: all 1s; 
 }
 
 .scene4 {

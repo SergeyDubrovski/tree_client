@@ -13,25 +13,23 @@ import switchpic from "../../picture/switch.png";
 import bitcoin from "../../picture/bitcoin.png";
 let i = 0;
 let k = 0;
-let speedSlow = [0, 6, 14, 12, 4, 3, 3, 0];
+let speedSlow = [0, 6, 14, 12, 4, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0];
 
 export default function Scene2() {
   const [margin, setMargin] = useState(0);
   const [switchOn, setSwitchOn] = useState({});
   const [speed, setSpeed] = useState(0);
-  const [pic, setpic] = useState(classes.scene2);
   const navigate = useNavigate();
 
   const changeFon = () => {
     i++;
-    k=0 
+    k = 0;
     let intID = setInterval(() => {
-      setSpeed(speedSlow[k]) 
-      k++
-    }, 150)  
+      setSpeed(speedSlow[k]);
+      k++;
+    }, 150);
     setSwitchOn({ transform: "rotate(180deg)", pointerEvents: "none" });
     setTimeout(() => {
-      
       setSwitchOn({});
       if (i > 4) {
         setSwitchOn({
@@ -44,20 +42,18 @@ export default function Scene2() {
           navigate("/scene/scene3");
         }, 200);
       }
-      clearInterval(intID)
-      setSpeed(0)  
-      k=0
+      clearInterval(intID);
+      setSpeed(0);
+      k = 0;
     }, 2000);
 
     setMargin(margin - 500);
-    
-    
   };
-  
 
+  console.log(speed);
   return (
     <div className={classes.scene21}>
-      <div className={pic} style={{ marginLeft: margin + "px" }}>
+      <div className={classes.scene2} style={{ marginLeft: margin + "px" }}>
         <div className={classes.speed2}>
           <div className={classes.rectangle}>
             <h3>{speed} km/h</h3>
