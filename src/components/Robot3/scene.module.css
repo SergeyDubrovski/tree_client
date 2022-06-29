@@ -162,3 +162,39 @@ align-items: center;
     position: absolute;
     margin-top: 31vh;
 }
+
+.scene4 {
+    background-image: url(../../picture/barrels.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: stretch;
+    flex-direction: row;
+
+  
+}
+
+.scene5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF494;
+}
+
+.rectangle4 {
+    position: fixed;
+    display: flex;
+    width: 400px;
+    height: 100px;
+
+    top: 5%;
+    background: #D2E23D;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
