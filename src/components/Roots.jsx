@@ -10,7 +10,6 @@ import robot1 from "../picture/robot11.png";
 import robot2 from "../picture/robot2.png";
 import robot3 from "../picture/dino.png";
 
-
 export default function Roots() {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -23,8 +22,8 @@ export default function Roots() {
         const res = current === picture.length - 1 ? 0 : current + 1;
         // Возвращаем индекс
         return res;
-        
-      });console.log('a');
+      });
+      console.log("a");
     }, 300);
     // Выключаем интервал
     return () => clearInterval(id);
@@ -42,8 +41,9 @@ export default function Roots() {
         <Link to="/scene/scene1">
           <img className={classes.robot2} src={robot2} alt="img" />
         </Link>
-        
-        <img className={classes.robot3} src={robot3} alt="img" />
+        <Link to="/help">
+          <img className={classes.robot3} src={robot3} alt="img" />
+        </Link>
       </div>
     </div>
   );
