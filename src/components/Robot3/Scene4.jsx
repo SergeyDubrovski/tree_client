@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./scene.module.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import flowerandrobot2 from "../../picture/flowerandrobot2.png";
+import flowerandrobot5 from "../../picture/flowerandrobot5.png";
 import switchpic from "../../picture/switch.png";
 import bitcoin from "../../picture/bitcoin.png";
 import { useEffect } from "react";
@@ -35,7 +35,7 @@ export default function Scene4() {
 
   return (
     <div className={classes.scene4}>
-      <div className={classes.pic}>
+      <div className={classes.pic4}>
         <div className={classes.speed4}>
           <div className={classes.rectangle4}>
             <h3> {speed}km/h</h3>
@@ -46,7 +46,7 @@ export default function Scene4() {
             </div>
           </div>
         </div>
-        <img
+  <img
           className={classes.switchpic}
           style={switchOn}
           onClick={() => {
@@ -58,9 +58,9 @@ export default function Scene4() {
       </div>
 
       <img
-        className={classes.flowerandrobot3}
+        className={classes.flowerandrobot5}
         style={{ marginLeft: margin + "px" }}
-        src={flowerandrobot2}
+        src={flowerandrobot5}
         alt="img"
       />
     </div>

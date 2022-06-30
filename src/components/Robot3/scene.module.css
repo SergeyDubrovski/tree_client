@@ -38,6 +38,12 @@
     align-items: center;
 }
 
+.scene21 {
+    width: 100%;
+    overflow: hidden;
+    
+}
+
 .scene2 {
     background-image: url(../../picture/desert.png);
     width: 9500px;
@@ -126,6 +132,7 @@ align-items: center;
 
 }
 
+
 .bath, .earth, .forest, .image, .piramid, .sky {
     width: 1280px;
     height: 650px;
@@ -164,20 +171,32 @@ align-items: center;
     margin-top: 31vh;
     transition: all 1s; 
 }
-
 .scene4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.pic4 {
     background-image: url(../../picture/barrels.png) ;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-content: stretch;
-    flex-direction: row;
+    position: absolute;
 
+
+   
   
 }
 
+.flowerandrobot5 {
+
+margin-top: 31vh;
+    transition: all 1s; 
+  z-index: 3;
+}
 .scene5 {
     width: 100%;
     height: 100vh;
