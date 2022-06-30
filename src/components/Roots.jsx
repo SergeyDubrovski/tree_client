@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import classes from "./pages.module.css";
 import { Link } from "react-router-dom";
-import kolba from "../picture/root/kolbaroot13.png";
 import NavBar from "./NavBar";
 import picture from "../picture/picture";
 import { useState } from "react";
-import { useRef } from "react";
 import robot1 from "../picture/robot11.png";
 import robot2 from "../picture/robot2.png";
 import robot3 from "../picture/dino.png";
@@ -23,7 +21,6 @@ export default function Roots() {
         // Возвращаем индекс
         return res;
       });
-      console.log("a");
     }, 300);
     // Выключаем интервал
     return () => clearInterval(id);

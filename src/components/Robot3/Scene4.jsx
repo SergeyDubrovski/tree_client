@@ -3,6 +3,7 @@ import classes from "./scene.module.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import flowerandrobot5 from "../../picture/flowerandrobot5.png";
+import flowerandrobot50 from "../../picture/flowerandrobot50.png";
 import switchpic from "../../picture/switch.png";
 import bitcoin from "../../picture/bitcoin.png";
 import { useEffect } from "react";
@@ -12,6 +13,7 @@ export default function Scene4() {
   const [switchOn, setSwitchOn] = useState({});
   const [speed, setSpeed] = useState(0);
   const [money, setMoney] = useState(0.0000909);
+  const [robot, setRobot] = useState(flowerandrobot50); 
   const navigate = useNavigate();
   let i = 0;
   let k = 0.0000909;
@@ -71,6 +73,7 @@ export default function Scene4() {
           onClick={() => {
             setSwitchOn({ transform: "rotate(180deg)", pointerEvents: "none" });
             changeBitc();
+            setRobot(flowerandrobot5)
           }}
           src={switchpic}
           alt="img"
@@ -78,9 +81,9 @@ export default function Scene4() {
       </div>
 
       <img
-        className={classes.flowerandrobot5}
+        className={classes.flowerandrobot50}
         style={{ marginLeft: margin + "px" }}
-        src={flowerandrobot5}
+        src={robot}
         alt="img"
       />
     </div>

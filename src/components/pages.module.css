@@ -4,24 +4,27 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
-    
+
 }
+
 .navBar {
     width: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
+
 .lineOne, .lineTwo {
 
-width: 30%;
-height: 3px;
-background-color: #F96417;
-margin-top: 50px;
+    width: 30%;
+    height: 3px;
+    background-color: #F96417;
+    margin-top: 50px;
 
 }
+
 .title {
     display: flex;
     width: 90%;
@@ -33,24 +36,25 @@ margin-top: 50px;
 .word1 {
     font-size: 80px;
     font-weight: bold;
-    
+
     background: linear-gradient(97.24deg, #105D8A 10.7%, #7CA2BB 50.51%, #9EBACD 79.01%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 
- 
+
 }
- .word2 {
+
+.word2 {
     font-size: 80px;
     font-weight: bold;
     background: linear-gradient(92.48deg, #FFEA38 13.35%, #FEF28B 46.93%, #FFF9C4 85.31%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
- } 
- 
- .word3 {
+}
+
+.word3 {
     font-size: 80px;
     font-weight: bold;
     background: linear-gradient(268.51deg, #02565F 42.08%, #35B7B1 57.07%, #00F2DB 84.04%);
@@ -65,14 +69,16 @@ margin-top: 50px;
     display: flex;
     justify-content: center;
 }
+
 .spruceLeft, .spruceRight {
-   width: 50px;
-   height: 100px;
-   transform: rotate(-90deg);
+    width: 50px;
+    height: 100px;
+    transform: rotate(-90deg);
 }
+
 .spruceRight {
     margin-top: 5px;
-   transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .spruceBottom {
@@ -86,9 +92,10 @@ margin-top: 50px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-   
+
     margin-top: 12vh;
 }
+
 .monitor1, .monitor2, .monitor3 {
     width: 390px;
     height: 340px;
@@ -110,27 +117,44 @@ margin-top: 50px;
     height: 348px;
 
 }
-.roots   {
-   transition: all 2s;
+
+.roots {
+    transition: all 2s;
 }
 
 .help {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00ECD6;
+    overflow: hidden;
+}
 
-width: 100%;
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-background-color: #00ECD6;
+
+.helpBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
 }
 
 .helpH {
-    font-size: 44px;
+    font-size: 38px;
     color: red;
+    width: 100%;
 }
 
 .flowerandrobot6 {
-width: 40%;
+    width: 40%;
 
+}
+
+.spruceLeft2 {
+    width: 50px;
+    height: 100px;
+    transform: rotate(-90deg);
 }
