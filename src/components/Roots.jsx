@@ -16,17 +16,18 @@ export default function Roots() {
 
   useEffect(() => {
     // Запускаем интервал
-    setInterval(() => {
+    const id = setInterval(() => {
       // Меняем состояние
       setActiveIndex((current) => {
         // Вычисляем индекс следующего слайда, который должен вывестись
         const res = current === picture.length - 1 ? 0 : current + 1;
         // Возвращаем индекс
         return res;
-      });
+        
+      });console.log('a');
     }, 300);
     // Выключаем интервал
-    return () => clearInterval();
+    return () => clearInterval(id);
   }, []);
   // Вычисляем индекс предыдущего слайда
 

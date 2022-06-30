@@ -37,7 +37,7 @@ export default function Scene3() {
 
     j++;
 
-    if (j < 10) {
+    if (j < 20) {
       setTimeout(function () {
         getSky();
       }, 1000);

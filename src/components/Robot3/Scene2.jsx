@@ -50,7 +50,7 @@ export default function Scene2() {
     setMargin(margin - 500);
   };
 
-  console.log(speed);
+  
   return (
     <div className={classes.scene21}>
       <div className={classes.scene2} style={{ marginLeft: margin + "px" }}>
