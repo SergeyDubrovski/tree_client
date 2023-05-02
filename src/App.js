@@ -19,9 +19,9 @@ function App() {
 
     <div >
       <Routes>
-        <Route path="/" element={<StartPage />} />
+       {/* <Route path="/" element={<StartPage />} />*/}
         <Route path="/Start" element={<Roots />} />
-        <Route path="/monitor" element={<Monitors />} />
+        <Route path="/" element={<Monitors />} />
         <Route path="/help" element={<Help />} />
         <Route path="/monitor/tree" element={<TreeM />} />
         <Route path="/monitor/sun" element={<SunM />} />

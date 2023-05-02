@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: 'http://91.215.176.34:7003/tree/' 
+    baseURL: 'http://10.70.70.242:7003/tree/' 
 })
 
 export const switchRelay = async (relay) => {

@@ -14,7 +14,7 @@ export default function TreeM() {
     if (!canvas.current) throw new Error("Ref is null");
     
     loadPlayer({
-      url: "ws://91.215.176.34:7010/api/stream1",
+      url: "ws://10.70.70.242:7010/api/stream1",
       canvas: canvas.current,
     });
 
